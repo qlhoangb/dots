@@ -1,0 +1,70 @@
+" ===== BASIC =====
+set nocompatible
+set number
+set relativenumber
+set ignorecase
+set smartcase
+set incsearch
+
+" ===== FILE VIEW =====
+set dotfiles          " show hidden files
+set sortnumbers
+set sort=type
+
+" ===== UI =====
+set wildmenu
+set ruler
+set showcmd
+
+" ===== BEHAVIOR =====
+set confirm
+set undolevels=100
+set history=100
+
+" ===== KEY REMAP =====
+
+" Toggle hidden files
+nnoremap zh :set dotfiles!<CR>
+
+" Reload
+nnoremap r :reload<CR>
+
+" Open file with default app
+nnoremap l :open<CR>
+
+" Go up directory
+nnoremap h :cd ..<CR>
+
+" Quick quit
+nnoremap qq :q<CR>
+
+" ===== FILE ASSOCIATIONS =====
+
+" Text
+filetype *.txt,*.md,*.org
+    \ {View} emacs -nw %c
+    \ {Edit} emacs -nw %c
+
+" Code
+filetype *.c,*.cpp,*.py,*.js,*.sh
+    \ {Edit} emacs -nw %c
+
+" PDF
+filetype *.pdf
+    \ {View} zathura %c &
+
+" Images
+filetype *.png,*.jpg,*.jpeg
+    \ {View} feh %c &
+
+" Video / audio
+filetype *.mp4,*.mkv,*.mp3,*.flac
+    \ {View} mpv %c &
+
+" Archives
+filetype *.zip,*.tar,*.gz,*.rar
+    \ {Extract} 7z x %c
+
+" ===== GENERAL OPEN =====
+fileviewer *.log less %c
+fileviewer * less %c
