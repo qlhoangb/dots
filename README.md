@@ -1,15 +1,36 @@
 # arch dots
 
-- hello there! lbee's here. i cannot getout of shallowing config :(, past week, i just letting my time goes on reinstallations and reconfigurations (rice rice rice)
-##### Sep 13. 25
+### Apr 11. 26
+please call me NEO!
+currently on ricing ts w my love~~
+
+恋人よ～　ー　KOIBITO YO
+(JDM) 1702-88J X60S-IBM 
+CORE SOLO U1300 1.06GHZ
+
 
 ---
 
-- just 4 months ago, my literacy n grammar.....  don't read them. i left those memorable lines behind :( - tl;dr
+
+##### Sep 13. 25 
+```
+hello there! lbee's here. i cannot getout of shallowing config :(, past week, i just letting my time goes on reinstallations and reconfigurations (rice rice rice)
+```
+
+
+---
+
+
 ##### August - 5. 2025
+```
+just 4 months ago, my literacy n grammar.....  don't read them. i left those memorable lines behind :( - tl;dr
+```
+
 
 ---
 
+
+##### Apr 21. 25
 ```
 # description for this 'dots'
 ---
@@ -23,4 +44,4 @@ This is my first (*absolutely trolled*) commitment for the change logs. I also c
 
 Initializing Linux-ing. *Long Hoang*. since ***2025.04.21***.
 ```
-##### Apr 21. 25
+
