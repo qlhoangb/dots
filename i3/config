@@ -21,7 +21,7 @@ bar {
 # PERSONAL
 
 
-set $term xterm -bg black -fg white -fa "Noto Sans Mono" -fs 12
+set $term alacritty
 set $files yazi
 
 set $browser firefox
@@ -34,7 +34,7 @@ assign [class=$notes] $ws3
 #input_method - ime
 exec --no-startup-id fcitx5
 #screen_capture - 
-bindsym $mod+Shift+s exec flameshot gui
+bindsym $mod+Shift+s exec xfce4-screenshooter -fc
 #clipboard_manager - clipman
 exec --no-startup-id xfce4-clipman
 bindsym $mod+v exec xfce4-clipman-history

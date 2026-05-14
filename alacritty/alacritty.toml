@@ -7,8 +7,16 @@ bold = { family = "Noto Sans Mono", style = "Bold"}
 italic = { family = "Noto Sans Mono", style = "Italic"}
 bold_italic = { family = "Noto Sans Mono", style = "Bold Italic"}
 
-size = 10.25
+size = 12.75
 
 [mouse]
 hide_when_typing = true
 
+[selection]
+save_to_clipboard = true
+
+[keyboard]
+bindings = [
+  { key = "V", mods = "Control|Shift", action = "Paste" },
+  { key = "C", mods = "Control|Shift", action = "Copy" }
+]
