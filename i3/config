@@ -75,12 +75,6 @@ gaps outer 1
 #inner_paddings
 gaps inner 3
 
-#few_adjustments - xinput
-  #m575
-exec_always --no-startup-id xinput --set-prop "Logitech ERGO M575S" "libinput Accel Speed" -0.6
-  #m570
-exec_always --no-startup-id xinput --set-prop "Logitech M570" "libinput Accel Speed" -1
-
 #brightness - brightnessctl
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
