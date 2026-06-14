@@ -75,12 +75,6 @@ gaps outer 1
 #inner_paddings
 gaps inner 3
 
-#few_adjustments - xinput
-  #m575
-exec_always --no-startup-id xinput --set-prop "Logitech ERGO M575S" "libinput Accel Speed" -0.6
-  #m570
-exec_always --no-startup-id xinput --set-prop "Logitech M570" "libinput Accel Speed" -1
-
 #brightness - brightnessctl
 bindsym XF86MonBrightnessUp exec brightnessctl set +10%
 bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
@@ -98,19 +92,20 @@ bindsym $mod+Left exec brightnessctl set 10%-
 
 #windows_layout (stacked | tabbed | toggle | splith | splitv)
 bindsym $mod+d layout toggle tabbed splith splitv
+bindsym $mod+f fullscreen toggle
 #layout mode at boot
 workspace_layout tabbed
 
 #change_focusing (alt+tab)
-bindsym $mod+Ctrl+Left focus left
-bindsym $mod+Ctrl+Down focus down
-bindsym $mod+Ctrl+Up focus up
-bindsym $mod+Ctrl+Right focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 #reposition_focused_window
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 #workspaces_definition
 set $ws1 "1"
@@ -149,10 +144,10 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #resize_window
 bindsym $mod+Ctrl+Shift+r mode "resize"
 mode "resize" {
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         bindsym Return mode "default"
         bindsym Escape mode "default"

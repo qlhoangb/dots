@@ -1,8 +1,0 @@
-! xrdb -merge ~/.Xresources
-XTerm*background: black
-XTerm*foreground: white
-XTerm*faceName: Noto Sans Mono
-XTerm*faceSize: 14
-XTerm*vt100.translations: #override \n\
-  Shift Ctrl <Key> V: insert-selection(CLIPBOARD) \n\
-  Shift Ctrl <Key> C: copy-selection(CLIPBOARD)
