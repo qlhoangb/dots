@@ -21,14 +21,18 @@ bar {
 # PERSONAL
 
 
-set $term alacritty
+set $term kitty
 set $files yazi
 
 set $browser firefox
 set $notes emacs
 
+set $communication vesktop
+
 assign [class=$browser] $ws1
 assign [class=$notes] $ws3
+
+assign [class=$communication] $ws2
 
 
 #input_method - ime
