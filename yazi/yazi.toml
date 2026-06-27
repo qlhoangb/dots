@@ -1,0 +1,19 @@
+# yazi.toml
+[mgr]
+show_hidden = true
+
+sort_by = 'natural'
+sort_dir_first = true
+
+linemode = 'size_and_mtime'
+
+show_symlink = true
+
+comment = 'idunno how to comment, make it variabled. brah? disable the mouse by left empty the array below'
+mouse_events = []
+
+[preview]
+wrap = 'no'
+tab_size = 4
+
+

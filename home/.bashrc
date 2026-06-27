@@ -11,9 +11,8 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 alias i3='startx'
-alias ls='ls -1ao --color'
+alias ls='ls -lah --color --group-directories-first'
 alias vim='nvim'
-alias neofetch='fastfetch'
 
 export EDITOR="/usr/bin/nvim"
 export VISUAL="$EDITOR"

@@ -21,24 +21,20 @@ bar {
 # PERSONAL
 
 
-set $term kitty
+set $term kitty|alacritty
 set $files yazi
 
 set $browser firefox
-set $notes emacs
-
-set $communication vesktop
+set $notes obsidian|emacs
 
 assign [class=$browser] $ws1
 assign [class=$notes] $ws3
-
-assign [class=$communication] $ws2
 
 
 #input_method - ime
 exec --no-startup-id fcitx5
 #screen_capture - 
-bindsym $mod+Shift+s exec xfce4-screenshooter -fc
+bindsym $mod+Shift+s exec xfce4-screenshooter -rcs ~/Pictures/screenshots/
 #clipboard_manager - clipman
 exec --no-startup-id xfce4-clipman
 bindsym $mod+v exec xfce4-clipman-history
@@ -56,7 +52,7 @@ bindsym $mod+Shift+r restart
 #exit_i3
 bindsym $mod+Shift+x exec i3-msg exit
 #kill_instance
-bindsym $mod+q kill
+bindsym $mod+Shift+q kill
 
 #hhkb_layout_laptop
 exec_always --no-startup-id /usr/bin/setxkbmap -option "ctrl:swapcaps"
@@ -91,8 +87,8 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 #same_but_another_way
 bindsym $mod+Down exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym $mod+Up exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
-bindsym $mod+Right exec brightnessctl set +10%
-bindsym $mod+Left exec brightnessctl set 10%-
+#bindsym $mod+Right exec brightnessctl set +10%
+#bindsym $mod+Left exec brightnessctl set 10%-
 
 #windows_layout (stacked | tabbed | toggle | splith | splitv)
 bindsym $mod+d layout toggle tabbed splith splitv
