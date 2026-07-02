@@ -20,16 +20,16 @@ bar {
 
 # PERSONAL
 
-
-set $term kitty|alacritty
+set $term kitty
 set $files yazi
 
 set $browser firefox
-set $notes obsidian|emacs
+set $notes obsidian
+set $study Anki
 
 assign [class=$browser] $ws1
 assign [class=$notes] $ws3
-
+assign [class=$study] $ws2
 
 #input_method - ime
 exec --no-startup-id fcitx5
@@ -144,10 +144,10 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 #resize_window
 bindsym $mod+Ctrl+Shift+r mode "resize"
 mode "resize" {
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym j resize grow height 5 px or 5 ppt
+        bindsym k resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
